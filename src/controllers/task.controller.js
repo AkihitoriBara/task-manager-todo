@@ -38,7 +38,7 @@ const getTasks = async (req, res) => {
     const tasks = await prisma.task.findMany({
       where: whereClause,
       orderBy: {
-        created_at: "desc",
+        created_at: "asc",
       },
       skip: (pageNumber - 1) * limitNumber,
       take: limitNumber,

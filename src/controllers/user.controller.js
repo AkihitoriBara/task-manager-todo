@@ -8,8 +8,8 @@ const getUsers = async (req, res) => {
         full_name: true,
         email: true,
         role: true,
-        emailVerified: true,
-        createdAt: true,
+        email_verified: true,
+        created_at: true,
       },
     });
 
@@ -72,7 +72,7 @@ const verifyUser = async (req, res) => {
         id: Number(req.params.id),
       },
       data: {
-        emailVerified: true,
+        email_verified: true,
       },
     });
 
