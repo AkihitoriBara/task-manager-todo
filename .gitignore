@@ -4,3 +4,6 @@ node_modules
 
 /generated/prisma
 api.http
+
+# Server logs
+server.log
